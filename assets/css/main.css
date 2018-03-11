@@ -1,0 +1,48 @@
+#header{
+    background-color: rgb(231, 148, 69);
+    color: #ffffff;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-family: 'Acme', sans-serif;
+}
+
+#topImageL {
+    width: 15%;
+    float: left;
+    margin-left: 20px;
+}
+
+#topImageR {
+	width: 15%;
+	float: right;
+	margin-right: 20px;
+}
+
+label {
+    font-size: 18px;
+}
+
+#char {
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#archerSearch {
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Acme', sans-serif;
+}
+
+#gifArea{
+    clear: both;
+    display: inline;
+    flex-wrap: wrap;
+}
+
+.archerGiphy{
+    padding: 2px;
+    width: 80%;
+}

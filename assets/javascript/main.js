@@ -33,12 +33,12 @@ $(document).ready(function(){
             
         });
     }
-        $("addChar").on("click", function(event){
+        $("#addChar").on("click", function(event){
             event.preventDefault();
-            var newChar = $("archerInput").val().trim();
+            var newChar = $("#archerInput").val().trim();
             topics.push(newChar);
             console.log(topics);
-            $("archerInput").val('');
+            $("#archerInput").val('');
             displayButtons();
         });
 
@@ -58,9 +58,9 @@ $(document).ready(function(){
     $(document).on("click", ".archerGiphy", pausePlayGifs);
 
     function pausePlayGifs(){
-        var state = $(this).attr("data-animate");
+        var state = $(this).attr("data-state");
         if(state === "still"){
-            $(this).attr("src", $(this).attr("data-animated"));
+            $(this).attr("src", $(this).attr("data-animate"));
             $(this).attr("data-state", "animate");
         } else {
             $(this).attr("src", $(this).attr("data-still"));

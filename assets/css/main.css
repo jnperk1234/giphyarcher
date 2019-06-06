@@ -1,9 +1,16 @@
-#header{
-    background-color: rgb(231, 148, 69);
+#header {
+     min-height:100%;
+     background:linear-gradient(0deg, rgba(37, 18, 100, 0.3), rgba(44, 74, 181, 0.3)),
+     url("../images/ArcherCast.JPG");
+     background-size:cover;
+     background-repeat: no-repeat;
+     background-position: center;
+    /* background-color: rgb(231, 148, 69); */
     color: #ffffff;
     text-align: center;
+
     padding-top: 10px;
-    padding-bottom: 15px;
+    padding-bottom: 15px; 
     font-family: 'Acme', sans-serif;
 }
 
@@ -14,14 +21,22 @@
 }
 
 #topImageR {
-	width: 15%;
-	float: right;
-	margin-right: 20px;
+    width: 15%;
+    float: right;
+    margin-right: 20px;
 }
 
 label {
     font-size: 18px;
 }
+
+/* .searchbar{
+    width: 50%;
+    margin: 0 auto;
+}
+.gifbuttons {
+    margin-top: 20px;
+} */
 
 #char {
     margin-right: 5px;
@@ -30,19 +45,20 @@ label {
     margin-bottom: 5px;
 }
 
-#archerSearch {
+#archersearch {
     margin: 0 auto;
+    width: 35%;
     text-align: center;
     font-family: 'Acme', sans-serif;
 }
 
-#gifArea{
+#gifArea {
     clear: both;
     display: inline;
     flex-wrap: wrap;
 }
 
-.archerGiphy{
+.archerGiphy {
     padding: 2px;
     width: 80%;
 }

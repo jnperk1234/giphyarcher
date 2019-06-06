@@ -1,60 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title>AJAX Giphy Button Review</title>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
   <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <title>Title</title>
 </head>
-<body id="bodyc">
 
-<div class="jumbotron" id="header">
-  <img id="topImageL" src="assets/images/archer1.gif">
-  <img id="topImageR" src="assets/images/archerpla.gif">
-  <h1>Gifs of the World Greatest Spy</h1>
-  <h4>Click the buttons to display GIPHYs of your Favorite Archer Character<br>Click the GIPHYs to pause and play<br>Search to add more buttons!</h4>
-</div>
-
-<form class="form-inline" id="archersearch">
-  <div class="form-group">
-    <label for="archerInput">Search in the I.S.I.S Database</label>
-    <input type="text" id="archerInput">
+<body>
+  <div class="jumbotron" id="header">
+    
+    <h1>Gifs of the World Greatest Spy</h1>
+    <h4>Click the buttons to display GIPHYs of your Favorite Archer Character<br>Click the GIPHYs to pause and
+      play<br>Search to add more buttons!</h4>
   </div>
-  <!-- Button triggers show to be added -->
-  <input id="addChar" type="submit" value="submit">
-</form>
-
-<div class="row">
-  <div class="container">
-    <div class="btn-group inline pull-left">
-      <button class="btn btn-primary" id="char" data-search="Sterling Archer">Sterling Malory Archer</button>
-      <button class="btn btn-primary" id="char" data-search="Lana Kane">Lana Kane</button>
-      <button class="btn btn-primary" id="char" data-search="Pam Poovey">Pamela Poovey</button>
-      <button class="btn btn-primary" id="char" data-search="Algernop Krieger">Doctor Algernop Krieger</button>
-      <button class="btn btn-primary" id="char" data-search="Cyril Figgis">Cyril Figgis</button>
-      <button class="btn btn-primary" id="char" data-search="Ray Gillette">Ray Gillette</button>
-      <button class="btn btn-primary" id="char" data-search="Cheryl Tunt">Cheryl/Carole/Cherlene Tunt</button>
-      <button class="btn btn-primary" id="char" data-search="Malory Archer">Malory Archer</button>
-
-        
 
 
-      <div id="myButtons"></div>
-    </div> <!--end of button group -->
-  </div> <!--end of container -->
-</div> <!--end of row -->
+<!-- <img id="topImageL" src="assets/images/archer1.gif">
+<img id="topImageR" src="assets/images/archerpla.gif"> -->
+  <form class="form-inline" id="archersearch">
+    <div class="form-group">
+      <label for="archerInput">Search in the I.S.I.S Database</label>
+      <input type="text" id="archerInput">
+    </div>
+    <!-- Button triggers show to be added -->
+    <input class="btn btn-primary btn-sm mr-2 " id="addChar" type="submit" value="submit">
+  </form>
+
+  <div class="row">
+    <div class="container">
+      <div class="btn-group inline pull-left">
+        <button class="btn btn-primary" id="char" data-search="Sterling Archer">Sterling Malory Archer</button>
+        <button class="btn btn-primary" id="char" data-search="Lana Kane">Lana Kane</button>
+        <button class="btn btn-primary" id="char" data-search="Pam Poovey">Pamela Poovey</button>
+        <button class="btn btn-primary" id="char" data-search="Algernop Krieger">Doctor Algernop Krieger</button>
+        <button class="btn btn-primary" id="char" data-search="Cyril Figgis">Cyril Figgis</button>
+        <button class="btn btn-primary" id="char" data-search="Ray Gillette">Ray Gillette</button>
+        <button class="btn btn-primary" id="char" data-search="Cheryl Tunt">Cheryl/Carole/Cherlene Tunt</button>
+        <button class="btn btn-primary" id="char" data-search="Malory Archer">Malory Archer</button>
+        <div id="myButtons"></div>
+      </div>
+    </div>
+  </div>
 
 
-<div class="row">
-  <div class="container">
-      <span><div id="gifArea"></div></span>
-  </div> <!--end of container -->
-</div> <!-- end of row  -->
+  <div class="row">
+    <div class="container">
+      <span>
+        <div id="gifArea"></div>
+      </span>
+    </div>
+    <!--end of row -->
+  </div> <!-- end of container  -->
 
-<script type="text/javascript" src="assets/javascript/main.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/javascript/main.js"></script>
+
 
 </body>
+
 </html>
